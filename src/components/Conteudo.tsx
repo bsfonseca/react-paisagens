@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
 const ConteudoStyled = styled.div`
-    height: 300px;
-    background-color: red;
+    height: 400px;
+
+    @media screen and (max-width: 976px) {
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1600px) {
+        background-position-y: -200px;
+    }
 
     display: flex;
     flex-direction: column;
@@ -13,9 +20,14 @@ const ConteudoStyled = styled.div`
     background-size: cover;
     background-position-y: -150px;
 
-    p {
+    h1 {
         font-family: "Gabarito";
         font-size: 36px;
+        color: white;
+    }
+    p {
+        font-family: "Gabarito";
+        font-size: 20px;
         color: white;
     }
 `;
@@ -23,7 +35,8 @@ const ConteudoStyled = styled.div`
 export const Conteudo = () => {
     return (
         <ConteudoStyled>
-            <p>Primeira pagina</p>
+            <h1>Viagens Growdev</h1>
+            <p>Explore os melhores destinos da Europa</p>
         </ConteudoStyled>
     );
 };
