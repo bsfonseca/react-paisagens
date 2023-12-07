@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import aviao from "../assets/aviao.png";
+import mala from "../assets/aviao.png";
+import destino from "../assets/aviao.png";
 
 const IconesStyled = styled.div`
     display: flex;
@@ -29,17 +32,17 @@ export const Icones = () => {
     return (
         <IconesStyled>
             <div className="texto-info ">
-                <img className="figura1" src="./src/assets/aviao.png" alt="Imagem avião" />
+                <img className="figura1" src={aviao} alt="Imagem avião" />
                 <h1>Viaje pelo mundo</h1>
                 <p>Explorando novos destinos juntos sempre</p>
             </div>
             <div className="texto-info">
-                <img className="figura1" src="./src/assets/mala.png" alt="Imagem mala" />
+                <img className="figura1" src={mala} alt="Imagem mala" />
                 <h1>Planeje suas férias</h1>
                 <p>Faça logo suas malas!</p>
             </div>
             <div className="texto-info">
-                <img className="figura1" src="./src/assets/destino.png" alt="Imagem destino" />
+                <img className="figura1" src={destino} alt="Imagem destino" />
                 <h1>Conheça lugares</h1>
                 <p>Descobrindo o mundo juntos agora</p>
             </div>

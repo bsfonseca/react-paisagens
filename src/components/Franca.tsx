@@ -1,8 +1,9 @@
 import { PaisStyled } from "./PaisStyled";
+import paisagem3 from "../assets/paisagem3.jpg";
 
 export const Franca = () => {
     return (
-        <PaisStyled imgUrl="./src/assets/paisagem3.jpg">
+        <PaisStyled imgUrl={paisagem3}>
             <div className="imagem"></div>
             <div className="texto">
                 <h1>Le plateau de Valensole </h1>

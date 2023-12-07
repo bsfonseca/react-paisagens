@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import paisagem1 from "../assets/paisagem1.jpg";
 
 const ContatoStyled = styled.div`
     height: 200px;
@@ -11,7 +12,7 @@ const ContatoStyled = styled.div`
     align-items: center;
     justify-content: center;
 
-    background-image: url("./src/assets/paisagem1.jpg");
+    background-image: url("${paisagem1}");
     background-size: cover;
     background-position-y: -500px;
 

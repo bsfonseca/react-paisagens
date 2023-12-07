@@ -1,8 +1,9 @@
 import { PaisStyled } from "./PaisStyled";
+import paisagem22 from "../assets/paisagem22.jpg";
 
 export const Suica = () => {
     return (
-        <PaisStyled imgUrl="./src/assets/paisagem22.jpg">
+        <PaisStyled imgUrl={paisagem22}>
             <div className="texto">
                 <h1>Alpes suiços</h1>
                 <h2>Suiça</h2>
